@@ -1,0 +1,103 @@
+@import "../../_globalColor";
+
+.social-media-div {
+  font-size: 2em;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-button {
+  margin-bottom: 10px;
+}
+
+.icon-button i {
+  color: $textColorDark;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-button i:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.facebook i {
+  background-color: $faceBook;
+}
+
+.linkedin i {
+  background-color: $linkedin;
+}
+
+.github i {
+  background-color: $github;
+}
+
+.gitlab i {
+  background-color: $gitlab;
+}
+
+.google i {
+  background-color: $google;
+}
+
+.twitter i {
+  background-color: $twitter;
+}
+
+.medium i {
+  background-color: $medium;
+}
+
+.stack-overflow i {
+  background-color: $stackoverflow;
+}
+
+.kaggle i {
+  background-color: $kaggle;
+}
+
+.instagram i {
+  background-color: $instagram;
+}
+
+/* Hover Transition */
+.twitter i:hover,
+.google i:hover,
+.gitlab i:hover,
+.github i:hover,
+.linkedin i:hover,
+.facebook i:hover,
+.instagram i:hover,
+.stack-overflow i:hover,
+.kaggle i:hover,
+.medium i:hover {
+  background: linear-gradient(135deg, $buttonColor, $primaryAccent) !important;
+  color: $textColorDark !important;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    text-align: center;
+  }
+}

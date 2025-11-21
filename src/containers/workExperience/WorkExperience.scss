@@ -1,0 +1,70 @@
+@import "../../_globalColor";
+
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 800;
+  background: linear-gradient(135deg, $textColor 0%, $buttonColor 50%, $primaryAccent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 50px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.experience-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, $buttonColor, $primaryAccent);
+  border-radius: 2px;
+}
+
+.dark-mode .experience-heading {
+  background: linear-gradient(135deg, $textColorDark 0%, $primaryAccent 50%, $secondaryAccent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.experience-container {
+  display: flex;
+  width: 90%;
+  max-width: 1400px;
+  padding: 40px 20px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.experience-container > * {
+  flex: 1;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}

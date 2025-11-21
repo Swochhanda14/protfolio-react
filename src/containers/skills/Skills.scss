@@ -1,0 +1,111 @@
+@import "../../_globalColor";
+
+.skills-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  gap: 60px;
+}
+
+.skills-text-div {
+  margin-left: 50px;
+  flex: 1;
+}
+
+.skills-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.skills-image-div {
+  flex: 1;
+  position: relative;
+}
+
+.skills-image-div > img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(99, 102, 241, 0.2));
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.skills-image-div > img:hover {
+  transform: scale(1.05);
+}
+
+.skills-heading {
+  font-size: 56px;
+  font-weight: 800;
+  background: linear-gradient(135deg, $textColor 0%, $buttonColor 50%, $primaryAccent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 50px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.skills-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, $buttonColor, $primaryAccent);
+  border-radius: 2px;
+}
+
+.dark-mode .skills-heading {
+  background: linear-gradient(135deg, $textColorDark 0%, $primaryAccent 50%, $secondaryAccent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subTitle {
+  color: $subTitle;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .skills-main-div {
+    flex-direction: column;
+  }
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .skills-text {
+    font-size: 16px;
+  }
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .skills-image-div {
+    /* display: none; */
+    order: 2;
+  }
+}

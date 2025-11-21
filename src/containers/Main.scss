@@ -1,0 +1,11 @@
+@import "../_globalColor";
+
+.dark-mode {
+  background: linear-gradient(135deg, $darkBackground 0%, #1e293b 100%);
+  color: $textColorDark;
+  transition: all 0.3s ease;
+}
+
+.dark-mode * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

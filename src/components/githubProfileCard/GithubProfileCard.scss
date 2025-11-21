@@ -1,0 +1,120 @@
+@import "../../_globalColor";
+
+.profile-image {
+  border-radius: 50%;
+  border: 0.5rem solid $githubProfileCardBorder;
+  margin-left: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 10px 20px rgba(99, 102, 241, 0.2));
+}
+
+.profile-image:hover {
+  box-shadow: 0 30px 60px rgba(99, 102, 241, 0.4);
+  transform: scale(1.05) rotate(5deg);
+  border-color: $primaryAccent;
+}
+
+.prof-title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(135deg, $textColor 0%, $buttonColor 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+}
+
+.dark-mode .prof-title {
+  background: linear-gradient(135deg, $textColorDark 0%, $primaryAccent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.location-div {
+  text-shadow: $githubProfileCardLocationTS;
+}
+
+.opp-div {
+  padding-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+}
+
+.main-content-profile {
+  flex: 80%;
+}
+
+.image-content-profile {
+  text-align: right;
+  flex: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-text {
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.desc-prof {
+  line-height: 45px;
+  font-size: 19px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content-profile {
+    text-align: center;
+    order: 2;
+  }
+
+  .bio-text {
+    font-size: 16px;
+  }
+
+  .image-content-profile {
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+
+  .desc-prof {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .profile-image:hover {
+    box-shadow: $lightBoxShadow 0 50px 50px -50px;
+    transition: 0.3s ease-out;
+  }
+
+  .prof-title {
+    padding-bottom: 1rem;
+    font-size: 32px;
+    text-align: center;
+  }
+}

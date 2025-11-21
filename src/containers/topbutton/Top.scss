@@ -1,0 +1,38 @@
+@import "../../_globalColor";
+
+#topButton {
+  visibility: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, $buttonColor, $primaryAccent);
+  color: white;
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 50px;
+  font-size: 24px;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
+
+#topButton:hover {
+  background: linear-gradient(135deg, $buttonHover, #7c3aed);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 12px 35px rgba(99, 102, 241, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#topButton:active {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}

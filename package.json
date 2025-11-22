@@ -23,7 +23,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build && vite build",
+    "build": "node fetch.js && CI=false react-scripts build && vite build",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

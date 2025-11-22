@@ -17,7 +17,9 @@ export default function About() {
           <div className="about-header">
             <h1
               className={
-                isDark ? "dark-mode heading about-heading" : "heading about-heading"
+                isDark
+                  ? "dark-mode heading about-heading"
+                  : "heading about-heading"
               }
             >
               {aboutMeSection.title}
@@ -50,21 +52,33 @@ export default function About() {
               </div>
             ) : null}
             <div className="about-text-div">
-              {aboutMeSection.description && aboutMeSection.description.map((para, i) => (
-                <p key={i} className={isDark ? "dark-mode about-paragraph" : "about-paragraph"}>
-                  {para}
-                </p>
-              ))}
+              {aboutMeSection.description &&
+                aboutMeSection.description.map((para, i) => (
+                  <p
+                    key={i}
+                    className={
+                      isDark ? "dark-mode about-paragraph" : "about-paragraph"
+                    }
+                  >
+                    {para}
+                  </p>
+                ))}
               <div className="about-contact">
                 <div className="about-contact-details">
                   {contactInfo.email_address && (
-                    <a className="about-contact-item" href={`mailto:${contactInfo.email_address}`}>
+                    <a
+                      className="about-contact-item"
+                      href={`mailto:${contactInfo.email_address}`}
+                    >
                       <i className="fas fa-envelope"></i>
                       <span>{contactInfo.email_address}</span>
                     </a>
                   )}
                   {contactInfo.number && (
-                    <a className="about-contact-item" href={`tel:${contactInfo.number}`}>
+                    <a
+                      className="about-contact-item"
+                      href={`tel:${contactInfo.number}`}
+                    >
                       <i className="fas fa-phone"></i>
                       <span>{contactInfo.number}</span>
                     </a>
@@ -77,7 +91,9 @@ export default function About() {
                       rel="noopener noreferrer"
                     >
                       <i className="fas fa-globe"></i>
-                      <span>{aboutMeSection.website || socialMediaLinks.github}</span>
+                      <span>
+                        {aboutMeSection.website || socialMediaLinks.github}
+                      </span>
                     </a>
                   )}
                 </div>

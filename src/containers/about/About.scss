@@ -10,7 +10,12 @@
 .about-heading {
   font-size: 56px;
   font-weight: 800;
-  background: linear-gradient(135deg, $textColor 0%, $buttonColor 50%, $primaryAccent 100%);
+  background: linear-gradient(
+    135deg,
+    $textColor 0%,
+    $buttonColor 50%,
+    $primaryAccent 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -24,7 +29,7 @@
 }
 
 .about-heading:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -36,7 +41,12 @@
 }
 
 .dark-mode .about-heading {
-  background: linear-gradient(135deg, $textColorDark 0%, $primaryAccent 50%, $secondaryAccent 100%);
+  background: linear-gradient(
+    135deg,
+    $textColorDark 0%,
+    $primaryAccent 50%,
+    $secondaryAccent 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -76,9 +86,13 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.about-image-ring { display: none; }
+.about-image-ring {
+  display: none;
+}
 
-.about-image-gradient { display: none; }
+.about-image-gradient {
+  display: none;
+}
 
 .about-image-social {
   width: 100%;

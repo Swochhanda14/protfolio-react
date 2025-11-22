@@ -30,7 +30,7 @@ const aboutMeSection = {
     "I'm a Graphic Designer and Frontend Developer who enjoys turning ideas into intuitive, pixel-perfect interfaces.",
     "I work with React, JavaScript, HTML/CSS, and Sass — and design using Figma, Photoshop, and Illustrator. My focus is on usability, performance, and responsive design across devices.",
     "Beyond UI, I care about accessibility and maintainable code. I translate design systems into reusable components and ship clean, scalable front-end.",
-    "When I'm not building, I'm learning SEO, exploring animations, and refining micro-interactions to elevate user experience.",
+    "When I'm not building, I'm learning SEO, exploring animations, and refining micro-interactions to elevate user experience."
   ],
   website: "https://swochhandak.com.np/",
   display: true
@@ -42,7 +42,8 @@ const greeting = {
   subTitle: emoji(
     "A passionate Graphic Designer & Frontend Developer 🚀 having an experience of building Web application Using Reactjs and Designing Using Figma/Photoshop/Illustrator."
   ), // Update with your description
-  resumeLink: "https://drive.google.com/file/d/18Xb49UZoKBpeVktEQOE8oiJScqGLkWsg/view", // Add your resume link (Google Drive, Dropbox, etc.) or leave empty to hide the button
+  resumeLink:
+    "https://drive.google.com/file/d/18Xb49UZoKBpeVktEQOE8oiJScqGLkWsg/view", // Add your resume link (Google Drive, Dropbox, etc.) or leave empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -83,70 +84,69 @@ const skillsSection = {
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-softwareSkills: [
-  // Front-End Development
-  {
-    skillName: "HTML5",
-    fontAwesomeClassname: "fab fa-html5"
-  },
-  {
-    skillName: "CSS3",
-    fontAwesomeClassname: "fab fa-css3-alt"
-  },
-  {
-    skillName: "Sass",
-    fontAwesomeClassname: "fab fa-sass"
-  },
-  {
-    skillName: "JavaScript",
-    fontAwesomeClassname: "fab fa-js"
-  },
-  {
-    skillName: "React.js",
-    fontAwesomeClassname: "fab fa-react"
-  },
-  {
-    skillName: "NPM",
-    fontAwesomeClassname: "fab fa-npm"
-  },
+  softwareSkills: [
+    // Front-End Development
+    {
+      skillName: "HTML5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "CSS3",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
+    {
+      skillName: "Sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "React.js",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "NPM",
+      fontAwesomeClassname: "fab fa-npm"
+    },
 
-  // Back-End / PHP
-  {
-    skillName: "PHP",
-    fontAwesomeClassname: "fab fa-php"
-  },
-  {
-    skillName: "Laravel",
-    fontAwesomeClassname: "fas fa-server"
-  },
-  {
-    skillName: "Node.js",
-    fontAwesomeClassname: "fab fa-node"
-  },
-  {
-    skillName: "SQL Database",
-    fontAwesomeClassname: "fas fa-database"
-  },
+    // Back-End / PHP
+    {
+      skillName: "PHP",
+      fontAwesomeClassname: "fab fa-php"
+    },
+    {
+      skillName: "Laravel",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "SQL Database",
+      fontAwesomeClassname: "fas fa-database"
+    },
 
-
-  // Design / Graphics
-  {
-    skillName: "Figma",
-    fontAwesomeClassname: "fab fa-figma"
-  },
-  {
-    skillName: "Adobe Photoshop",
-    useAdobeLogo: true
-  },
-  {
-    skillName: "Adobe Illustrator",
-    useAdobeLogo: true
-  },
-  {
-    skillName: "Adobe XD",
-    useAdobeLogo: true
-  }
-],
+    // Design / Graphics
+    {
+      skillName: "Figma",
+      fontAwesomeClassname: "fab fa-figma"
+    },
+    {
+      skillName: "Adobe Photoshop",
+      useAdobeLogo: true
+    },
+    {
+      skillName: "Adobe Illustrator",
+      useAdobeLogo: true
+    },
+    {
+      skillName: "Adobe XD",
+      useAdobeLogo: true
+    }
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -161,9 +161,7 @@ const educationInfo = {
       subHeader: "Secondary Level",
       duration: "Jan 2005 - Dec 2018",
       desc: "School Level Activities and Competitions.",
-      descBullets: [
-        
-      ]
+      descBullets: []
     },
     {
       schoolName: "The Kist College & SS",
@@ -206,7 +204,7 @@ const techStack = {
       progressPercentage: "90%"
     }
   ],
-  
+
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
@@ -249,7 +247,6 @@ const workExperiences = {
   ]
 };
 
-
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
@@ -262,12 +259,14 @@ const openSource = {
 
 const bigProjects = {
   title: "MyProjects",
-  subtitle: "SOME Project I Built Using Reactjs/HTML/CSS &Laravel framework and Designing Using Figma/Photoshop/Illustrator.",
+  subtitle:
+    "SOME Project I Built Using Reactjs/HTML/CSS &Laravel framework and Designing Using Figma/Photoshop/Illustrator.",
   projects: [
     {
       image: require("./assets/images/55.png"),
       projectName: "Dreamy Rental",
-      projectDesc: "A user-friendly platform that simplifies room rentals by connecting renters with admins, offering easy search, filtering, and seamless booking.",
+      projectDesc:
+        "A user-friendly platform that simplifies room rentals by connecting renters with admins, offering easy search, filtering, and seamless booking.",
       footerLink: [
         {
           name: "Source Code",
@@ -278,7 +277,8 @@ const bigProjects = {
     {
       image: require("./assets/images/7.png"),
       projectName: "Attendance Management System",
-      projectDesc: "A modern platform for educational institutions that automates attendance tracking, provides real-time updates, and generates detailed reports for students and teachers.",
+      projectDesc:
+        "A modern platform for educational institutions that automates attendance tracking, provides real-time updates, and generates detailed reports for students and teachers.",
       footerLink: [
         {
           name: "Source Code",
@@ -289,7 +289,8 @@ const bigProjects = {
     {
       image: require("./assets/images/6.png"),
       projectName: "Easy Leave (Employee Leave Management System)",
-      projectDesc: "An intuitive intranet-based system for employees and managers to submit, track, and approve leave requests efficiently, streamlining company workflows.",
+      projectDesc:
+        "An intuitive intranet-based system for employees and managers to submit, track, and approve leave requests efficiently, streamlining company workflows.",
       footerLink: [
         {
           name: "Source Code",
@@ -300,7 +301,8 @@ const bigProjects = {
     {
       image: require("./assets/images/4.png"),
       projectName: "BrewBox",
-      projectDesc: "A full-stack e-commerce platform for coffee enthusiasts, offering customizable orders, flexible subscriptions, and a seamless, responsive user experience.",
+      projectDesc:
+        "A full-stack e-commerce platform for coffee enthusiasts, offering customizable orders, flexible subscriptions, and a seamless, responsive user experience.",
       footerLink: [
         {
           name: "Source Code",
@@ -359,7 +361,7 @@ const achievementSection = {
           url: "#" // Replace with your certificate link
         }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -375,37 +377,53 @@ const blogSection = {
     {
       image: require("./assets/images/5.png"),
       projectName: "Dreamy Rental",
-      projectDesc: "A user-friendly platform that simplifies room rentals by connecting renters with admins, offering easy search, filtering, and seamless booking.",
+      projectDesc:
+        "A user-friendly platform that simplifies room rentals by connecting renters with admins, offering easy search, filtering, and seamless booking.",
       footerLink: [
-        { name: "Visit Website", url: "#" }, // replace with actual
-        { name: "Tutorial I Followed", url: "https://www.youtube.com/watch?v=2z_HaJ2xW9Y&list=PLSJxovi1IyDGFdKsGGFJbYMY-mAASXNZw" } // replace with actual
+        {name: "Visit Website", url: "#"}, // replace with actual
+        {
+          name: "Tutorial I Followed",
+          url: "https://www.youtube.com/watch?v=2z_HaJ2xW9Y&list=PLSJxovi1IyDGFdKsGGFJbYMY-mAASXNZw"
+        } // replace with actual
       ]
     },
     {
       image: require("./assets/images/7.png"),
       projectName: "Attendance Management System",
-      projectDesc: "A modern platform for educational institutions that automates attendance tracking, provides real-time updates, and generates detailed reports for students and teachers.",
+      projectDesc:
+        "A modern platform for educational institutions that automates attendance tracking, provides real-time updates, and generates detailed reports for students and teachers.",
       footerLink: [
-        { name: "View Project", url: "#" }, // replace with actual
-        { name: "Tutorial I Followed", url: "https://www.youtube.com/watch?v=I1ZZT_fw-xU&list=PLJ4-ETiGBrdOZ4kvbzNGidD26M24BLImM" } // replace with actual
+        {name: "View Project", url: "#"}, // replace with actual
+        {
+          name: "Tutorial I Followed",
+          url: "https://www.youtube.com/watch?v=I1ZZT_fw-xU&list=PLJ4-ETiGBrdOZ4kvbzNGidD26M24BLImM"
+        } // replace with actual
       ]
     },
     {
       image: require("./assets/images/6.png"),
       projectName: "Easy Leave (Employee Leave Management)",
-      projectDesc: "An intuitive intranet-based system for employees and managers to submit, track, and approve leave requests efficiently, streamlining company workflows.",
+      projectDesc:
+        "An intuitive intranet-based system for employees and managers to submit, track, and approve leave requests efficiently, streamlining company workflows.",
       footerLink: [
-        { name: "View Project", url: "#" }, // replace with actual
-        { name: "Tutorial I Followed", url: "https://www.youtube.com/watch?v=g8Qub6twpX4" } // replace with actual
+        {name: "View Project", url: "#"}, // replace with actual
+        {
+          name: "Tutorial I Followed",
+          url: "https://www.youtube.com/watch?v=g8Qub6twpX4"
+        } // replace with actual
       ]
     },
     {
       image: require("./assets/images/4.png"),
       projectName: "BrewBox",
-      projectDesc: "A full-stack e-commerce platform for coffee enthusiasts, offering customizable orders, flexible subscriptions, and a seamless, responsive user experience.",
+      projectDesc:
+        "A full-stack e-commerce platform for coffee enthusiasts, offering customizable orders, flexible subscriptions, and a seamless, responsive user experience.",
       footerLink: [
-        { name: "Visit Website", url: "#" }, // replace with actual
-        { name: "Tutorial I Followed", url: "https://www.youtube.com/watch?v=731wley-JfM&list=PLRB0wzP8AS_GMe_1P-hAZOYjn-a2CdhWA&index=1" } // replace with actual
+        {name: "Visit Website", url: "#"}, // replace with actual
+        {
+          name: "Tutorial I Followed",
+          url: "https://www.youtube.com/watch?v=731wley-JfM&list=PLRB0wzP8AS_GMe_1P-hAZOYjn-a2CdhWA&index=1"
+        } // replace with actual
       ]
     }
   ],

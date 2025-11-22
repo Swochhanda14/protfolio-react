@@ -4,16 +4,16 @@ process = require("process");
 require("dotenv").config();
 
 // Helper function to clean and validate environment variable values
-const cleanEnvValue = (value) => {
+const cleanEnvValue = value => {
   if (!value) return "";
   // Remove comments (everything after #)
-  const cleaned = value.split('#')[0].trim();
+  const cleaned = value.split("#")[0].trim();
   // Remove quotes if present
-  return cleaned.replace(/^["']|["']$/g, '').trim();
+  return cleaned.replace(/^["']|["']$/g, "").trim();
 };
 
 // Helper function to check if a value is a placeholder
-const isPlaceholder = (value) => {
+const isPlaceholder = value => {
   const cleaned = cleanEnvValue(value);
   if (!cleaned) return true;
   const placeholderPatterns = [
@@ -41,15 +41,21 @@ const ERR = {
 };
 if (USE_GITHUB_DATA === "true") {
   if (GITHUB_USERNAME === undefined || isPlaceholder(GITHUB_USERNAME)) {
-    console.log("⚠️  GitHub username not configured. Skipping GitHub data fetch.");
-    console.log("   Please update your .env file with a valid GITHUB_USERNAME and REACT_APP_GITHUB_TOKEN");
+    console.log(
+      "⚠️  GitHub username not configured. Skipping GitHub data fetch."
+    );
+    console.log(
+      "   Please update your .env file with a valid GITHUB_USERNAME and REACT_APP_GITHUB_TOKEN"
+    );
   } else if (isPlaceholder(GITHUB_TOKEN)) {
     console.log("⚠️  GitHub token not configured. Skipping GitHub data fetch.");
-    console.log("   Please update your .env file with a valid REACT_APP_GITHUB_TOKEN");
+    console.log(
+      "   Please update your .env file with a valid REACT_APP_GITHUB_TOKEN"
+    );
   } else {
     console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
-  var data = JSON.stringify({
-    query: `
+    var data = JSON.stringify({
+      query: `
 {
   user(login:"${GITHUB_USERNAME}") { 
     name
@@ -81,40 +87,40 @@ if (USE_GITHUB_DATA === "true") {
     }
 }
 `
-  });
-  const default_options = {
-    hostname: "api.github.com",
-    path: "/graphql",
-    port: 443,
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      "User-Agent": "Node"
-    }
-  };
-
-  const req = https.request(default_options, res => {
-    let data = "";
-
-    console.log(`statusCode: ${res.statusCode}`);
-    if (res.statusCode !== 200) {
-      throw new Error(ERR.requestFailed);
-    }
-
-    res.on("data", d => {
-      data += d;
     });
-    res.on("end", () => {
-      fs.writeFile("./public/profile.json", data, function (err) {
-        if (err) return console.log(err);
-        console.log("saved file to public/profile.json");
+    const default_options = {
+      hostname: "api.github.com",
+      path: "/graphql",
+      port: 443,
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+        "User-Agent": "Node"
+      }
+    };
+
+    const req = https.request(default_options, res => {
+      let data = "";
+
+      console.log(`statusCode: ${res.statusCode}`);
+      if (res.statusCode !== 200) {
+        throw new Error(ERR.requestFailed);
+      }
+
+      res.on("data", d => {
+        data += d;
+      });
+      res.on("end", () => {
+        fs.writeFile("./public/profile.json", data, function (err) {
+          if (err) return console.log(err);
+          console.log("saved file to public/profile.json");
+        });
       });
     });
-  });
 
-  req.on("error", error => {
-    throw error;
-  });
+    req.on("error", error => {
+      throw error;
+    });
 
     req.write(data);
     req.end();
@@ -137,7 +143,9 @@ if (MEDIUM_USERNAME && !isPlaceholder(MEDIUM_USERNAME)) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      console.log("⚠️  Medium blogs fetch failed. This is okay if you don't have a Medium account.");
+      console.log(
+        "⚠️  Medium blogs fetch failed. This is okay if you don't have a Medium account."
+      );
       console.log("   Status code:", res.statusCode);
       // Don't throw error, just skip
       return;
@@ -155,13 +163,17 @@ if (MEDIUM_USERNAME && !isPlaceholder(MEDIUM_USERNAME)) {
   });
 
   req.on("error", error => {
-    console.log("⚠️  Medium blogs fetch error. This is okay if you don't use Medium.");
+    console.log(
+      "⚠️  Medium blogs fetch error. This is okay if you don't use Medium."
+    );
     console.log("   Error:", error.message);
     // Don't throw error, just skip
   });
 
   req.end();
 } else {
-  console.log("ℹ️  Medium username not configured. Skipping Medium blogs fetch.");
+  console.log(
+    "ℹ️  Medium username not configured. Skipping Medium blogs fetch."
+  );
   console.log("   (This is normal if you don't use Medium)");
 }

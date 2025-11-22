@@ -78,9 +78,15 @@ export default function AchievementCard({cardInfo, isDark}) {
         <div className="modal-overlay" onClick={closeModal}>
           <div
             className={isDark ? "dark-mode modal-content" : "modal-content"}
-            onClick={(e) => e.stopPropagation()}
+            onClick={e => e.stopPropagation()}
           >
-            <button className="modal-close" onClick={closeModal} aria-label="Close">×</button>
+            <button
+              className="modal-close"
+              onClick={closeModal}
+              aria-label="Close"
+            >
+              ×
+            </button>
             <img
               src={cardInfo.image}
               alt={cardInfo.imageAlt || "Certificate"}

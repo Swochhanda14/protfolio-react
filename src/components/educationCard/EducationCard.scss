@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: row;
   padding: 2.5rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(248, 250, 252, 0.95) 100%
+  );
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 24px;
@@ -29,7 +33,7 @@
 }
 
 .education-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -46,7 +50,11 @@
 }
 
 .education-card:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(248, 250, 252, 1) 100%
+  );
   box-shadow: 0 25px 60px rgba(0, 212, 170, 0.3);
   transform: translateY(-10px) translateX(15px) scale(1.01);
   border-color: rgba(0, 212, 170, 0.4);
@@ -54,20 +62,33 @@
 }
 
 .dark-mode .education-card {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(30, 41, 59, 0.95) 100%
+  );
   border-color: rgba(99, 102, 241, 0.3);
   box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15);
 }
 
 .dark-mode .education-card:hover {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 1) 0%,
+    rgba(30, 41, 59, 1) 100%
+  );
   box-shadow: 0 20px 50px rgba(99, 102, 241, 0.4);
   border-color: rgba(139, 92, 246, 0.5);
 }
 
 .education-card:hover + .education-card-border {
   width: 100%;
-  background: linear-gradient(90deg, $buttonColor, $primaryAccent, $secondaryAccent);
+  background: linear-gradient(
+    90deg,
+    $buttonColor,
+    $primaryAccent,
+    $secondaryAccent
+  );
   height: 6px;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
   -webkit-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,7 +101,11 @@
   height: 4px;
   width: 60%;
   border-top: none;
-  background: linear-gradient(90deg, rgba(148, 163, 184, 0.3), rgba(148, 163, 184, 0.1));
+  background: linear-gradient(
+    90deg,
+    rgba(148, 163, 184, 0.3),
+    rgba(148, 163, 184, 0.1)
+  );
   margin: 0 auto 2rem auto;
   border-radius: 10px;
   -webkit-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -92,13 +117,18 @@
 }
 
 .education-card-border::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   animation: shimmer-border 3s infinite;
 }
 
@@ -164,19 +194,27 @@
 }
 
 .education-card-left::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.2),
+    rgba(139, 92, 246, 0.2)
+  );
   z-index: 0;
   transition: all 0.4s ease;
 }
 
 .education-card:hover .education-card-left::before {
   transform: scale(1.2);
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(139, 92, 246, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.3),
+    rgba(139, 92, 246, 0.3)
+  );
 }
 
 .education-card-right {
@@ -217,7 +255,7 @@
 }
 
 .education-text-duration::before {
-  content: '📅';
+  content: "📅";
   font-size: 16px;
 }
 
@@ -245,7 +283,7 @@
 }
 
 .education-text-bullets > ul > li::before {
-  content: '▸';
+  content: "▸";
   position: absolute;
   left: 0;
   color: $buttonColor;

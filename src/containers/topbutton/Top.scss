@@ -28,7 +28,8 @@
 #topButton:hover {
   background: linear-gradient(135deg, $buttonHover, #00a085, #ff4d7a);
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 12px 35px rgba(0, 212, 170, 0.5), 0 0 20px rgba(255, 107, 157, 0.3);
+  box-shadow: 0 12px 35px rgba(0, 212, 170, 0.5),
+    0 0 20px rgba(255, 107, 157, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

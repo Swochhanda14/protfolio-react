@@ -15,8 +15,8 @@ export default function SoftwareSkill() {
                 name={skills.skillName}
               >
                 {skills.imagePath ? (
-                  <img 
-                    src={skills.imagePath} 
+                  <img
+                    src={skills.imagePath}
                     alt={skills.skillName}
                     className="software-skill-image"
                   />

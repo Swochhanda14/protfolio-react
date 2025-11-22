@@ -3,7 +3,12 @@
 .achievement-heading {
   font-size: 56px;
   font-weight: 800;
-  background: linear-gradient(135deg, $textColor 0%, $buttonColor 50%, $primaryAccent 100%);
+  background: linear-gradient(
+    135deg,
+    $textColor 0%,
+    $buttonColor 50%,
+    $primaryAccent 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -17,7 +22,7 @@
 }
 
 .achievement-heading::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -29,7 +34,12 @@
 }
 
 .dark-mode .achievement-heading {
-  background: linear-gradient(135deg, $textColorDark 0%, $primaryAccent 50%, $secondaryAccent 100%);
+  background: linear-gradient(
+    135deg,
+    $textColorDark 0%,
+    $primaryAccent 50%,
+    $secondaryAccent 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

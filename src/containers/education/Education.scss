@@ -3,7 +3,12 @@
 .education-heading {
   font-size: 56px;
   font-weight: 800;
-  background: linear-gradient(135deg, $textColor 0%, $buttonColor 50%, $primaryAccent 100%);
+  background: linear-gradient(
+    135deg,
+    $textColor 0%,
+    $buttonColor 50%,
+    $primaryAccent 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -16,7 +21,7 @@
 }
 
 .education-heading::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -28,7 +33,12 @@
 }
 
 .dark-mode .education-heading {
-  background: linear-gradient(135deg, $textColorDark 0%, $primaryAccent 50%, $secondaryAccent 100%);
+  background: linear-gradient(
+    135deg,
+    $textColorDark 0%,
+    $primaryAccent 50%,
+    $secondaryAccent 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -46,14 +56,19 @@
 }
 
 .education-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(99, 102, 241, 0.2),
+    transparent
+  );
   pointer-events: none;
 }
 

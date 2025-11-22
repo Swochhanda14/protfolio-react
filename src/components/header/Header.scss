@@ -28,7 +28,11 @@
 }
 
 .dark-menu li a:hover {
-  background: linear-gradient(135deg, rgba(0, 212, 170, 0.2), rgba(255, 107, 157, 0.2)) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 170, 0.2),
+    rgba(255, 107, 157, 0.2)
+  ) !important;
   color: $buttonColor !important;
   transform: translateX(5px);
 }
@@ -81,7 +85,7 @@
 }
 
 .header li a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 8px;
   left: 24px;
@@ -98,7 +102,11 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background: linear-gradient(135deg, rgba(0, 212, 170, 0.12), rgba(255, 107, 157, 0.12));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 170, 0.12),
+    rgba(255, 107, 157, 0.12)
+  );
   color: $buttonColor;
   transform: translateY(-2px);
 }

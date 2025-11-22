@@ -59,7 +59,8 @@
   font-weight: 800;
   letter-spacing: -1px;
   margin-bottom: 20px;
-  animation: fadeInUp 0.8s ease;
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark-mode .greeting-text {
@@ -74,24 +75,27 @@
   line-height: 1.6;
   color: $subTitle;
   font-weight: 400;
-  animation: fadeInUp 1s ease;
+  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .greeting-image-div {
   position: relative;
-  animation: fadeInRight 1s ease;
+  animation: fadeInRight 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(0 20px 40px rgba(99, 102, 241, 0.2));
-  transition: transform 0.3s ease;
+  filter: drop-shadow(0 20px 40px rgba(0, 212, 170, 0.2));
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 20px;
 }
 
 .greeting-image-div > img:hover {
   transform: scale(1.05) rotate(2deg);
+  filter: drop-shadow(0 25px 50px rgba(0, 212, 170, 0.3));
 }
 
 .wave-emoji {
@@ -106,7 +110,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -117,7 +121,7 @@
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(40px);
   }
   to {
     opacity: 1;

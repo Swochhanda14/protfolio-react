@@ -28,8 +28,8 @@
 }
 
 .dark-menu li a:hover {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2)) !important;
-  color: $primaryAccent !important;
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.2), rgba(255, 107, 157, 0.2)) !important;
+  color: $buttonColor !important;
   transform: translateX(5px);
 }
 
@@ -42,7 +42,19 @@
   margin: 0px auto;
   border-bottom: 1px solid rgba(148, 163, 184, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header ul {
@@ -63,7 +75,7 @@
   text-decoration: none;
   font-weight: 500;
   border-radius: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
   margin: 0 4px;
 }
@@ -75,7 +87,7 @@
   left: 24px;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, $buttonColor, $primaryAccent);
+  background: linear-gradient(90deg, $buttonColor, #00b894, $primaryAccent);
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -86,7 +98,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+  background: linear-gradient(135deg, rgba(0, 212, 170, 0.12), rgba(255, 107, 157, 0.12));
   color: $buttonColor;
   transform: translateY(-2px);
 }
@@ -99,7 +111,7 @@
   text-decoration: none;
   margin-top: 8px;
   line-height: normal;
-  background: linear-gradient(135deg, $buttonColor, $primaryAccent);
+  background: linear-gradient(135deg, $buttonColor, #00b894, $primaryAccent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

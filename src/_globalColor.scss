@@ -1,88 +1,88 @@
-/* Modern Portfolio Design System - 2024
-A vibrant, contemporary color palette with gradients and modern effects */
+/* Unique Portfolio Design System - Original Design
+A distinctive color palette with unique visual identity */
 
-// Primary brand colors - Modern gradient palette
-$buttonColor: #6366f1;
-$buttonHover: #4f46e5;
-$topButtonHover: #4338ca;
+// Primary brand colors - Unique teal and coral palette
+$buttonColor: #00d4aa;
+$buttonHover: #00b894;
+$topButtonHover: #00a085;
 
-// Accent colors
-$primaryAccent: #8b5cf6;
-$secondaryAccent: #ec4899;
-$tertiaryAccent: #06b6d4;
+// Accent colors - Unique vibrant palette
+$primaryAccent: #ff6b9d;
+$secondaryAccent: #ffa726;
+$tertiaryAccent: #7b68ee;
 
-// text colors light theme
-$titleColor: #0f172a;
-$textColor: #1e293b;
-$subTitle: #64748b;
-$cardSubtitle: #475569;
-$talkCardSubTitle: #94a3b8;
-$blogCardTitleColor: #0f172a;
+// text colors light theme - Unique dark tones
+$titleColor: #1a1a2e;
+$textColor: #16213e;
+$subTitle: #5a6c7d;
+$cardSubtitle: #4a5568;
+$talkCardSubTitle: #718096;
+$blogCardTitleColor: #1a1a2e;
 
-// text color dark theme
-$textColorDark: #f1f5f9;
+// text color dark theme - Soft light tones
+$textColorDark: #e8f4f8;
 
 // toggle switch colors
-$toggleCheck: #6366f1;
+$toggleCheck: #00d4aa;
 $toggleSwitchSliderBG: #cbd5e1;
 
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: #6366f1;
+$githubRepoCardLanguageColorBG: #00d4aa;
 $githubRepoCardColor: rgb(71, 85, 105);
 $githubRepoCardRepoCardStatsColor: rgb(100, 116, 139);
-$githubRepoCardRepoNameColor: rgb(15, 23, 42);
-$githubProfileCardLocationTS: #fef3c7;
-$githubProfileCardBorder: #6366f1;
+$githubRepoCardRepoNameColor: rgb(26, 26, 46);
+$githubProfileCardLocationTS: #fff4e6;
+$githubProfileCardBorder: #00d4aa;
 
-// light background colors - Modern glassmorphism
+// light background colors - Unique soft tones
 $lightBackground1: #ffffff;
-$lightBackground2: rgba(255, 255, 255, 0.95);
-$lightBackground3: #f8fafc;
-$blogCardContainerColor: #475569;
+$lightBackground2: rgba(250, 252, 255, 0.98);
+$lightBackground3: #f0f7ff;
+$blogCardContainerColor: #4a5568;
 
-// dark background colors - Deep modern dark
-$darkBackground: #0f172a;
+// dark background colors - Unique deep blue-gray
+$darkBackground: #0e1621;
 
-// light theme box shadows - Soft modern shadows
-$lightBoxShadowDark: rgba(15, 23, 42, 0.15);
-$lightBoxShadow: rgba(15, 23, 42, 0.08);
-$lightBoxShadowDarker: rgba(15, 23, 42, 0.25);
+// light theme box shadows - Unique soft shadows
+$lightBoxShadowDark: rgba(0, 212, 170, 0.12);
+$lightBoxShadow: rgba(0, 212, 170, 0.06);
+$lightBoxShadowDarker: rgba(0, 212, 170, 0.2);
 
-// dark theme box shadows - Glowing effects
-$darkBoxShadow: rgba(99, 102, 241, 0.3);
-$darkBoxShadow2: rgba(139, 92, 246, 0.4);
+// dark theme box shadows - Unique glowing effects
+$darkBoxShadow: rgba(0, 212, 170, 0.25);
+$darkBoxShadow2: rgba(255, 107, 157, 0.3);
 
-// linear gradients - Modern vibrant gradients
+// linear gradients - Unique vibrant gradients
 $experienceCardBlurredDivLG: linear-gradient(
   135deg,
-  rgba(99, 102, 241, 0.3),
-  rgba(139, 92, 246, 0.2)
+  rgba(0, 212, 170, 0.25),
+  rgba(255, 107, 157, 0.15)
 );
 $experienceCardBannerLG: linear-gradient(
   135deg,
-  rgba(99, 102, 241, 0.9),
-  rgba(139, 92, 246, 0.8)
+  rgba(0, 212, 170, 0.85),
+  rgba(123, 104, 238, 0.75)
 );
 
-// borders - Subtle modern borders
-$progressBarBackground: #e2e8f0;
-$lightBorder1: rgba(148, 163, 184, 0.2);
-$educationCardBorder: #6366f1;
+// borders - Unique subtle borders
+$progressBarBackground: #e0f2f1;
+$lightBorder1: rgba(0, 212, 170, 0.15);
+$educationCardBorder: #00d4aa;
 
-// hovers - Interactive states
-$achievementCertificateCardHoverDark: rgba(99, 102, 241, 0.2);
-$blogCardHoverSmallColor: rgba(99, 102, 241, 0.1);
-$headerHoverBG: #f1f5f9;
-$contactDetailHoverTS: #6366f1;
+// hovers - Unique interactive states
+$achievementCertificateCardHoverDark: rgba(0, 212, 170, 0.15);
+$blogCardHoverSmallColor: rgba(0, 212, 170, 0.08);
+$headerHoverBG: #e8f8f5;
+$contactDetailHoverTS: #00d4aa;
 
 // misc backgrounds
-$progressBarSpanBG: #6366f1;
-$iconBackground: #475569;
-$appHeaderBG: #0f172a;
+$progressBarSpanBG: #00d4aa;
+$iconBackground: #4a5568;
+$appHeaderBG: #0e1621;
 
 // misc colors
-$skillsColor: #6366f1;
-$appLink: #06b6d4;
+$skillsColor: #00d4aa;
+$appLink: #00d4aa;
 
 // social media icons - Modern vibrant colors
 $faceBook: #1877f2;

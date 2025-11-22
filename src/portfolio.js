@@ -162,8 +162,7 @@ const educationInfo = {
       duration: "Jan 2005 - Dec 2018",
       desc: "School Level Activities and Competitions.",
       descBullets: [
-        "Active participant in academic and extracurricular events",
-        "Consistently maintained strong academic performance"
+        
       ]
     },
     {
@@ -172,7 +171,7 @@ const educationInfo = {
       subHeader: "Higher Level (+2)",
       duration: "September 2018 - April 2020",
       desc: "Higher Level Activities and Competitions.",
-      descBullets: ["Engaged in group projects and scientific research presentations"]
+      descBullets: []
     },
     {
       schoolName: "St.Lawrence College",
@@ -180,7 +179,7 @@ const educationInfo = {
       subHeader: "Bachelor in Computer Application",
       duration: "September 2022 - April 2026",
       desc: "Took courses about Software Designing, Graphic designing, Web Security, Operating Systems, ...",
-      descBullets: ["Learned software design, web security, operating systems, and more"]
+      descBullets: []
     }
   ]
 };

@@ -60,6 +60,12 @@ body {
   animation: fadeIn 0.8s ease-out;
 }
 
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

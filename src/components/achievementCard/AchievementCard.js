@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
@@ -10,6 +12,28 @@ export default function AchievementCard({cardInfo, isDark}) {
     var win = window.open(url, "_blank");
     win.focus();
   }
+
+  function openCertificate() {
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
+  useEffect(() => {
+    function onKeyDown(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    }
+    if (isModalOpen) {
+      document.addEventListener("keydown", onKeyDown);
+    }
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isModalOpen]);
 
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
@@ -36,13 +60,35 @@ export default function AchievementCard({cardInfo, isDark}) {
               className={
                 isDark ? "dark-mode certificate-tag" : "certificate-tag"
               }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              onClick={() => {
+                const n = (v.name || "").toLowerCase();
+                if (n.includes("certificate")) {
+                  openCertificate();
+                } else {
+                  openUrlInNewTab(v.url, v.name);
+                }
+              }}
             >
               {v.name}
             </span>
           );
         })}
       </div>
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div
+            className={isDark ? "dark-mode modal-content" : "modal-content"}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className="modal-close" onClick={closeModal} aria-label="Close">×</button>
+            <img
+              src={cardInfo.image}
+              alt={cardInfo.imageAlt || "Certificate"}
+              className="modal-image"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

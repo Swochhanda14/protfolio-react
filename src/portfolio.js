@@ -19,13 +19,30 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
+// About Me Section
+const aboutMeSection = {
+  title: "About Me",
+  subtitle:
+    "Designer turned developer — I blend UX and clean code to build polished, fast, and accessible experiences.",
+  profileImage: require("./assets/images/swox.jpeg"),
+  imageAlt: "Profile",
+  description: [
+    "I'm a Graphic Designer and Frontend Developer who enjoys turning ideas into intuitive, pixel-perfect interfaces.",
+    "I work with React, JavaScript, HTML/CSS, and Sass — and design using Figma, Photoshop, and Illustrator. My focus is on usability, performance, and responsive design across devices.",
+    "Beyond UI, I care about accessibility and maintainable code. I translate design systems into reusable components and ship clean, scalable front-end.",
+    "When I'm not building, I'm learning SEO, exploring animations, and refining micro-interactions to elevate user experience.",
+  ],
+  website: "https://swochhandak.com.np/",
+  display: true
+};
+
 const greeting = {
   username: "SwocXanda", // Change to your name
   title: "Hi all, I'm Swochhanda Karanjeet", // Change to your greeting
   subTitle: emoji(
     "A passionate Graphic Designer & Frontend Developer 🚀 having an experience of building Web application Using Reactjs and Designing Using Figma/Photoshop/Illustrator."
   ), // Update with your description
-  resumeLink: "", // Add your resume link (Google Drive, Dropbox, etc.) or leave empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/18Xb49UZoKBpeVktEQOE8oiJScqGLkWsg/view", // Add your resume link (Google Drive, Dropbox, etc.) or leave empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,7 +51,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/Swochhanda14", // Update with your GitHub username
   linkedin: "https://www.linkedin.com/in/swocxanda-karanjeet-91868021b/", // Update with your LinkedIn profile
-  gmail: "swochhanda14@gmail.com", // Update with your email
+  gmail: "", // Update with your email
   gitlab: "", // Optional: Add your GitLab profile
   facebook: "https://www.facebook.com/swocxanda.karanjeet", // Optional: Add your Facebook profile
   medium: "", // Optional: Add your Medium profile
@@ -145,8 +162,8 @@ const educationInfo = {
       duration: "Jan 2005 - Dec 2018",
       desc: "School Level Activities and Competitions.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Active participant in academic and extracurricular events",
+        "Consistently maintained strong academic performance"
       ]
     },
     {
@@ -155,7 +172,7 @@ const educationInfo = {
       subHeader: "Higher Level (+2)",
       duration: "September 2018 - April 2020",
       desc: "Higher Level Activities and Competitions.",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Engaged in group projects and scientific research presentations"]
     },
     {
       schoolName: "St.Lawrence College",
@@ -163,7 +180,7 @@ const educationInfo = {
       subHeader: "Bachelor in Computer Application",
       duration: "September 2022 - April 2026",
       desc: "Took courses about Software Designing, Graphic designing, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Learned software design, web security, operating systems, and more"]
     }
   ]
 };
@@ -174,18 +191,23 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "HTML/CSS/JS", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "50%"
+      Stack: "Reactsjs",
+      progressPercentage: "60%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "50%"
+      Stack: "Backend/PHP/Laravel",
+      progressPercentage: "40%"
+    },
+    {
+      Stack: "Graphic Designing",
+      progressPercentage: "90%"
     }
   ],
+  
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
@@ -244,13 +266,13 @@ const bigProjects = {
   subtitle: "SOME Project I Built Using Reactjs/HTML/CSS &Laravel framework and Designing Using Figma/Photoshop/Illustrator.",
   projects: [
     {
-      image: require("./assets/images/5.png"),
+      image: require("./assets/images/55.png"),
       projectName: "Dreamy Rental",
       projectDesc: "A user-friendly platform that simplifies room rentals by connecting renters with admins, offering easy search, filtering, and seamless booking.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "#" // replace with actual URL if available
+          name: "Source Code",
+          url: "https://github.com/Swochhanda14/Dreamyrental" // replace with actual URL if available
         }
       ]
     },
@@ -260,19 +282,19 @@ const bigProjects = {
       projectDesc: "A modern platform for educational institutions that automates attendance tracking, provides real-time updates, and generates detailed reports for students and teachers.",
       footerLink: [
         {
-          name: "View Project",
-          url: "#" // replace with actual URL or leave "#" if none
+          name: "Source Code",
+          url: "https://github.com/Swochhanda14/AMS" // replace with actual URL or leave "#" if none
         }
       ]
     },
     {
       image: require("./assets/images/6.png"),
-      projectName: "Easy Leave (Employee Leave Management)",
+      projectName: "Easy Leave (Employee Leave Management System)",
       projectDesc: "An intuitive intranet-based system for employees and managers to submit, track, and approve leave requests efficiently, streamlining company workflows.",
       footerLink: [
         {
-          name: "View Project",
-          url: "#" // replace with actual URL or leave "#" if none
+          name: "Source Code",
+          url: "https://github.com/Swochhanda14/ELMS" // replace with actual URL or leave "#" if none
         }
       ]
     },
@@ -282,8 +304,8 @@ const bigProjects = {
       projectDesc: "A full-stack e-commerce platform for coffee enthusiasts, offering customizable orders, flexible subscriptions, and a seamless, responsive user experience.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "#" // replace with actual URL if available
+          name: "Source Code",
+          url: "https://github.com/Swochhanda14/brewbox_laravel12" // replace with actual URL if available
         }
       ]
     }
@@ -301,10 +323,10 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Front-End Developer Internship",
+      title: "Front-End Developer Certification",
       subtitle:
-        "Completed an internship in Front-End Development, gaining hands-on experience with HTML, CSS, JavaScript, and React.",
-      image: require("./assets/images/8.jpg"),
+        "Completed an Course in Front-End Development, gaining hands-on experience with HTML, CSS, JavaScript, and React.",
+      image: require("./assets/images/u8.jpg"),
       imageAlt: "Front-End Internship Logo",
       footerLink: [
         {
@@ -314,10 +336,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "Graphic Designer Internship",
+      title: "Graphic Designer Certification",
       subtitle:
-        "Completed a Graphic Design Internship, mastering UI/UX, digital graphics, and branding design tools.",
-      image: require("./assets/images/9.jfif"),
+        "Completed a Graphic Design Course, mastering UI/UX, digital graphics, and branding design tools.",
+      image: require("./assets/images/c1.jpg"),
       imageAlt: "Graphic Design Internship Logo",
       footerLink: [
         {
@@ -447,10 +469,11 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
+  aboutMeSection,
   greeting,
   socialMediaLinks,
   splashScreen,
